@@ -1,0 +1,11 @@
+Hey, Dude you need to find where we can call EventRender3D.
+
+we need it for lot of stuff.
+
+for example StorageEsp and waypoints and esp and tracers all use it but i have not called it yet just find where you call your method for drawing chestesp and call the render3d event there here is how you call it
+
+EventRender3D event = new EventRender3D(partialTicks)
+TeamBattleClient.getEventManager().call(event);
+
+
+partialTicks was in optifine src and since this doesnt use optifine it may be renamed.
